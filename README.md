@@ -1,2 +1,2 @@
-# config_i3
-minha configuração de ambiente i3
+# config_sway
+minha configuração de ambiente sway
