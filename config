@@ -17,18 +17,42 @@ set $mod Mod4
 
 
 #Direcao
-set $left h
-set $down j
-set $up k
-set $right l
+set $up w
+set $right d
+set $down s
+set $left a
 
 
 # Terminal
 set $term nvim
 
       
-# Your preferred application launcher
+# launcher
 set $menu wmenu-run
+
+
+# Workspace
+set $w1 "Workspace 1"
+set $w2 "Workspace 2"
+set $w3 "Workspace 3"
+set $w4 "Workspace 4"
+set $w5 "Workspace 5"
+set $w6 "Workspace 6"
+set $w7 "Workspace 7"
+set $w8 "Workspace 8"
+set $w9 "Workspace 9"
+set $w0 "Workspace 0"
+
+swaymsg rename workspace 1 to $w1
+swaymsg rename workspace 2 to $w2
+swaymsg rename workspace 3 to $w3
+swaymsg rename workspace 4 to $w4
+swaymsg rename workspace 5 to $w5
+swaymsg rename workspace 6 to $w6
+swaymsg rename workspace 7 to $w7
+swaymsg rename workspace 8 to $w8
+swaymsg rename workspace 9 to $w9
+swaymsg rename workspace 10 to $w0
 
 
 
