@@ -1,0 +1,107 @@
+#terminal
+bindsym $mod+Return exec $term
+
+# Kill
+bindsym $mod+Shift+q kill
+
+# Launcher
+bindsym $mod+d exec $menu
+
+# Recarrega .conf
+bindsym $mod+r
+
+
+
+    ###################################
+    # # Alterar depois                #
+    # floating_modifier $mod normal   #
+    ###################################
+
+
+#####################################################################
+## Janelas e Workspace
+#####################################################################
+#Janelas
+    # Variaveis
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    bindsym $mod+$down focus down
+    bindsym $mod+$left focus left
+    
+    # Setas
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+    bindsym $mod+Down focus down
+    bindsym $mod+Left focus left
+
+
+
+# Workspace
+    # Variaveis
+    bindsym $mod+Shift+$right workspace next
+    bindsym $mod+Shift+$left workspace prev
+
+    # Setas
+    bindsym $mod+Shift+right workspace next
+    bindsym $mod+Shift+left workspace prev
+    
+    bindsym $mod+1 workspace $w1
+    bindsym $mod+2 workspace $w2
+    bindsym $mod+3 workspace $w3
+    bindsym $mod+4 workspace $w4
+    bindsym $mod+5 workspace $w5
+    bindsym $mod+6 workspace $w6
+    bindsym $mod+7 workspace $w7
+    bindsym $mod+8 workspace $w8
+    bindsym $mod+9 workspace $w9
+    bindsym $mod+0 workspace $w10
+
+
+
+mode "Move"
+{
+    # Variaveis
+    bindsym $up move up
+    bindsym $right move right
+    bindsym $left move left
+    bindsym $down move down
+    
+    # Setas
+    bindsym Up move up
+    bindsym Right move right
+    bindsym Down move down
+    bindsym Left move left
+}
+
+
+
+mode: "Resize"
+{
+    # Variaveis
+    bindsym $up resize grow height 10px
+    bindsym $right resize grow width 10px
+    bindsym $down resize shrink height 10px
+    bindsym $left resize shrink width 10px
+    
+    # Setas
+    bindsym up resize grow height 10px
+    bindsym right resize grow width 10p
+    bindsym down resize shrink height 10px
+    bindsym left resize shrink width 10px
+}
+
+
+
+mode "Workspace"
+{
+    bindsym $mod+1 [workspace=".*"] move to workspace $w1; workspace $w1, mode "default"
+    bindsym $mod+2 [workspace=".*"] move to workspace $w2; workspace $w2, mode "default"
+    bindsym $mod+3 [workspace=".*"] move to workspace $w3; workspace $w3, mode "default"
+    bindsym $mod+4 [workspace=".*"] move to workspace $w4; workspace $w4, mode "default"
+    bindsym $mod+5 [workspace=".*"] move to workspace $w5; workspace $w5, mode "default"
+    bindsym $mod+6 [workspace=".*"] move to workspace $w6; workspace $w6, mode "default"
+    bindsym $mod+7 [workspace=".*"] move to workspace $w7; workspace $w7, mode "default"
+    bindsym $mod+8 [workspace=".*"] move to workspace $w8; workspace $w8, mode "default"
+    bindsym $mod+9 [workspace=".*"] move to workspace $w9; workspace $w9, mode "default"
+    bindsym $mod+0 [workspace=".*"] move to workspace $w10; workspace $w10, mode "default"
+}
